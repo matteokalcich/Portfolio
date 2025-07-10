@@ -209,3 +209,19 @@ footer {
   color: #00ffe0;
   transform: scale(1.05);
 }
+#languageSwitcher {
+  background: #0a0a0a;
+  color: #f0f0f0;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#languageSwitcher:hover {
+  background: #222;
+  transform: scale(1.05);
+}

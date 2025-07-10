@@ -5,82 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Matteo Kalcich | Freelance Developer</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <div class="logo">Matteo Kalcich</div>
     <nav>
       <ul>
-        <li><a href="#about">Chi sono</a></li>
-        <li><a href="#projects">Progetti</a></li>
-        <li><a href="#contact">Contatti</a></li>
+        <li><a href="#about" data-i18n="menuAbout">Chi sono</a></li>
+        <li><a href="#projects" data-i18n="menuProjects">Progetti</a></li>
+        <li><a href="#contact" data-i18n="menuContact">Contatti</a></li>
       </ul>
     </nav>
+    <select id="languageSwitcher">
+      <option value="it">🇮🇹 IT</option>
+      <option value="en">🇬🇧 EN</option>
+    </select>
   </header>
 
   <section class="hero">
-    <h1>Ciao, sono <span class="highlight">Matteo Kalcich</span></h1>
-    <p>Sviluppatore freelance che trasforma idee in applicazioni e siti, concretizziamo insieme la tua idea, non lasciarla in testa.</p>
-    <a href="#contact" class="cta-button">Contattami ora 🚀</a>
+    <h1 data-i18n="heroTitle">Ciao, sono <span class="highlight">Matteo Kalcich</span></h1>
+    <p data-i18n="heroText">Sviluppatore freelance che trasforma idee in applicazioni e siti, concretizziamo insieme la tua idea, non lasciarla in testa.</p>
+    <a href="#contact" class="cta-button" data-i18n="ctaButton">Contattami ora 🚀</a>
   </section>
 
   <section id="about">
-    <h2>Chi sono</h2>
-    <p>Sono uno sviluppatore freelance appassionato di tecnologia, sempre alla ricerca di soluzioni creative e nuove sfide. Amo trasformare idee in prodotti digitali eleganti e funzionali, curando ogni dettaglio e offrendo un’esperienza utente memorabile.</p>
+    <h2 data-i18n="aboutTitle">Chi sono</h2>
+    <p data-i18n="aboutText">Sono uno sviluppatore freelance appassionato di tecnologia, sempre alla ricerca di soluzioni creative e nuove sfide. Amo trasformare idee in prodotti digitali eleganti e funzionali, curando ogni dettaglio e offrendo un’esperienza utente memorabile.</p>
   </section>
 
   <section id="projects">
-    <h2>I miei progetti</h2>
+    <h2 data-i18n="projectsTitle">I miei progetti</h2>
     <div class="projects-grid">
       <div class="project-card">
         <h3>🐶 PassioneCane</h3>
-        <p>Un social dedicato al mondo cinofilo, sviluppato in Flutter con backend Wordpress e GraphQL, che permette agli amanti dei cani di connettersi e trovare strutture pet-friendly vicino a loro.</p>
+        <p data-i18n="project1">Un social dedicato al mondo cinofilo, sviluppato in Flutter con backend Wordpress e GraphQL, che permette agli amanti dei cani di connettersi e trovare strutture pet-friendly vicino a loro.</p>
       </div>
       <div class="project-card">
         <h3>💬 Chat P2P con chiamate</h3>
-        <p>Una chat peer-to-peer in stile WhatsApp Web con messaggistica istantanea via WebSocket e chiamate audio/video integrate tramite WebRTC, interfaccia moderna e compatibilità cross-device.</p>
+        <p data-i18n="project2">Una chat peer-to-peer in stile WhatsApp Web con messaggistica istantanea via WebSocket e chiamate audio/video integrate tramite WebRTC, interfaccia moderna e compatibilità cross-device.</p>
       </div>
     </div>
   </section>
 
   <section id="skills">
-    <h2>Linguaggi che conosco</h2>
+    <h2 data-i18n="skillsTitle">Linguaggi che conosco</h2>
     <div class="skills-grid">
+      <!-- Questi titoli sono già universali, puoi tradurre le descrizioni se desiderato -->
       <div class="skill-card">
         <h3>💻 HTML & CSS</h3>
-        <p>Strutturo e stilo interfacce responsive e moderne, creando siti web veloci e accessibili.</p>
+        <p data-i18n="skill1">Strutturo e stilo interfacce responsive e moderne, creando siti web veloci e accessibili.</p>
       </div>
       <div class="skill-card">
         <h3>🛠️ JavaScript</h3>
-        <p>Creo interattività dinamica, animazioni fluide e logiche front-end robuste con React e Vanilla JS.</p>
+        <p data-i18n="skill2">Creo interattività dinamica, animazioni fluide e logiche front-end robuste con React e Vanilla JS.</p>
       </div>
       <div class="skill-card">
         <h3>⚛️ React</h3>
-        <p>Sviluppo web app performanti con componenti riutilizzabili e gestione stati scalabile.</p>
+        <p data-i18n="skill3">Sviluppo web app performanti con componenti riutilizzabili e gestione stati scalabile.</p>
       </div>
       <div class="skill-card">
         <h3>📱 Flutter</h3>
-        <p>Creo app mobile cross-platform con interfacce eleganti e logiche complesse con GraphQL e Firebase.</p>
+        <p data-i18n="skill4">Creo app mobile cross-platform con interfacce eleganti e logiche complesse con GraphQL e Firebase.</p>
       </div>
       <div class="skill-card">
         <h3>🐘 PHP</h3>
-        <p>Costruisco backend leggeri e API RESTful, con gestione database MySQL e dashboard personalizzate.</p>
+        <p data-i18n="skill5">Costruisco backend leggeri e API RESTful, con gestione database MySQL e dashboard personalizzate.</p>
       </div>
       <div class="skill-card">
         <h3>🗄️ SQL</h3>
-        <p>Progetto e gestisco database MySQL strutturati, ottimizzando relazioni e query per app e siti.</p>
+        <p data-i18n="skill6">Progetto e gestisco database MySQL strutturati, ottimizzando relazioni e query per app e siti.</p>
       </div>
       <div class="skill-card">
         <h3>☕ Java</h3>
-        <p>Sviluppo backend, socket server e logiche di networking con gestione WebSocket.</p>
+        <p data-i18n="skill7">Sviluppo backend, socket server e logiche di networking con gestione WebSocket.</p>
       </div>
     </div>
   </section>
 
-
   <section id="contact">
-    <h2>Contattami</h2>
-    <p>Hai un’idea che vuoi trasformare in realtà? Scrivimi sul form seguente o utilizza i miei contatti diretti:</p>
+    <h2 data-i18n="contactTitle">Contattami</h2>
+    <p data-i18n="contactText">Hai un’idea che vuoi trasformare in realtà? Scrivimi sul form seguente o utilizza i miei contatti diretti:</p>
     
     <div class="direct-contacts">
       <p>📧 Email: <a href="mailto:matteokalcich@gmail.com">matteokalcich@gmail.com</a></p>
@@ -89,18 +94,15 @@
     </div>
 
     <form action="https://formspree.io/f/mjkrpddk" method="POST">
-      <input type="text" name="name" placeholder="Il tuo nome" required/>
-      <input type="email" name="email" placeholder="La tua email" required/>
-      <textarea name="message" placeholder="Il tuo messaggio" required></textarea>
-      <button type="submit">Invia ✉️</button>
+      <input type="text" name="name" placeholder="Il tuo nome" data-i18n-placeholder="formName" required/>
+      <input type="email" name="email" placeholder="La tua email" data-i18n-placeholder="formEmail" required/>
+      <textarea name="message" placeholder="Il tuo messaggio" data-i18n-placeholder="formMessage" required></textarea>
+      <button type="submit" data-i18n="formButton">Invia ✉️</button>
     </form>
   </section>
-
 
   <footer>
     <p>&copy; 2025 Matteo Kalcich - Freelance Developer. Tutti i diritti riservati.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
